@@ -1,0 +1,1853 @@
+[
+    {
+        "id": "57bab08cc8feb83e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e4d2a49aee3b10ab",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "a911c54c25cb45a4bbd445a491c83ccb.s2.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c76c9da4b129bee9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Courier,monospace",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#efc806",
+                "baseFont": "Courier,monospace",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#efc806",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#efc806",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#fadc47",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#efc806",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Courier,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b559504215d7d64c",
+        "type": "ui_tab",
+        "name": "Frontpage",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f28589253a36fc72",
+        "type": "ui_tab",
+        "name": "Gameplay",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1be661d5ebaccc16",
+        "type": "ui_group",
+        "name": "Welcome",
+        "tab": "b559504215d7d64c",
+        "order": 1,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f7c46f394de8e6d",
+        "type": "ui_group",
+        "name": "Games",
+        "tab": "f28589253a36fc72",
+        "order": 1,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "53464d62c191a22d",
+        "type": "ui_group",
+        "name": "Wires",
+        "tab": "f28589253a36fc72",
+        "order": 7,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5eb50c8181b29c24",
+        "type": "ui_group",
+        "name": "Sequence",
+        "tab": "f28589253a36fc72",
+        "order": 8,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b67cc96d6bb936d0",
+        "type": "ui_group",
+        "name": "Maintenance",
+        "tab": "f28589253a36fc72",
+        "order": 9,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d202b83beb08d032",
+        "type": "ui_group",
+        "name": "Toggle",
+        "tab": "f28589253a36fc72",
+        "order": 10,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "460397cfae1c4aab",
+        "type": "ui_group",
+        "name": "Ultrasonic",
+        "tab": "f28589253a36fc72",
+        "order": 11,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "882026c4f133ac6c",
+        "type": "ui_group",
+        "name": "Motor",
+        "tab": "f28589253a36fc72",
+        "order": 12,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73489518f6a38f2a",
+        "type": "ui_group",
+        "name": "Intro",
+        "tab": "f28589253a36fc72",
+        "order": 6,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8cf59995ea40bc7",
+        "type": "ui_group",
+        "name": "3lives",
+        "tab": "f28589253a36fc72",
+        "order": 2,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "655bd0b3eb0697df",
+        "type": "ui_group",
+        "name": "2lives",
+        "tab": "f28589253a36fc72",
+        "order": 3,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8ed7432d33809982",
+        "type": "ui_group",
+        "name": "1lives",
+        "tab": "f28589253a36fc72",
+        "order": 4,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e56b6bbe0f4f4936",
+        "type": "ui_group",
+        "name": "0lives",
+        "tab": "f28589253a36fc72",
+        "order": 5,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3daf75d137278bd0",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "b8cf59995ea40bc7",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d1cb464b4169d952",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "b8cf59995ea40bc7",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6c1634a16feb9cc1",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "655bd0b3eb0697df",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "86bf51fc763ae8c2",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "655bd0b3eb0697df",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7985985a57ce58f9",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "8ed7432d33809982",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c43f3953fe6c3d0c",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "8ed7432d33809982",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4042967b12f23822",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "e56b6bbe0f4f4936",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "19211827034f97dc",
+        "type": "ui_spacer",
+        "z": "57bab08cc8feb83e",
+        "name": "spacer",
+        "group": "e56b6bbe0f4f4936",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "82efa82fc293b31b",
+        "type": "mqtt out",
+        "z": "57bab08cc8feb83e",
+        "name": "TO ESP",
+        "topic": "MQTT_IN",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e4d2a49aee3b10ab",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "dfb8e80741f0fc83",
+        "type": "comment",
+        "z": "57bab08cc8feb83e",
+        "name": "MQTT",
+        "info": "",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3f62053b7459127a",
+        "type": "inject",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "start",
+        "payloadType": "str",
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "82efa82fc293b31b",
+                "e13b3fee25b31316"
+            ]
+        ]
+    },
+    {
+        "id": "ebab2c284dfd9f38",
+        "type": "ui_button",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "group": "1be661d5ebaccc16",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "start",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "f0339068410522c6",
+                "c32bc01bf33349e1",
+                "82efa82fc293b31b"
+            ]
+        ]
+    },
+    {
+        "id": "e13b3fee25b31316",
+        "type": "debug",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b74ba6b440613d26",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "1be661d5ebaccc16",
+        "name": "Frontpage Intro ",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Intro",
+        "file": "Bomb_Manual_page_front_page_2.jpg",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1040,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d05f7f977a5410f",
+        "type": "inject",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "end",
+        "payloadType": "str",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "82efa82fc293b31b",
+                "e13b3fee25b31316"
+            ]
+        ]
+    },
+    {
+        "id": "e9e91655f1c16d7b",
+        "type": "ui_toast",
+        "z": "57bab08cc8feb83e",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 710,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f0339068410522c6",
+        "type": "change",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Starting in 5 seconds",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "e9e91655f1c16d7b"
+            ]
+        ]
+    },
+    {
+        "id": "a13ef7bea4d105e7",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "53464d62c191a22d",
+        "name": "Wires",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m1_Wires.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1010,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c32bc01bf33349e1",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "func": "msg.payload = \"Gameplay\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 420,
+        "wires": [
+            [
+                "e279e4eabb091111"
+            ]
+        ]
+    },
+    {
+        "id": "8bbc5c2c487d3d0b",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 760,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc9e7dc74dbd8797",
+        "type": "ui_dropdown",
+        "z": "57bab08cc8feb83e",
+        "name": "Games",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "8f7c46f394de8e6d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Intro",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Sequence",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Toggles",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "Maintenance",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "Wires",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Ultrasonic",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "Motor",
+                "value": "6",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1120,
+        "y": 780,
+        "wires": [
+            [
+                "791741b235733462",
+                "a43b74f5235f6f48",
+                "fea06c6c60c27bcc",
+                "3ad791310d761fbb",
+                "aea4283794e5a73d",
+                "f33501d338ea2d82",
+                "11b283a199f6b3cb",
+                "1538c191e6bd832b"
+            ]
+        ]
+    },
+    {
+        "id": "78369d6f5b25e5b6",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 540,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cadb64e8865dd7a7",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "func": "msg.payload = {\"group\": {\"hide\": [\"Gameplay\"], \"show\": [\"Frontpage_Welcome\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "78369d6f5b25e5b6"
+            ]
+        ]
+    },
+    {
+        "id": "cb49dfb574b24d1f",
+        "type": "inject",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "cadb64e8865dd7a7"
+            ]
+        ]
+    },
+    {
+        "id": "9f8dd56c2805fc94",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "5eb50c8181b29c24",
+        "name": "Sequence",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m2_Sequence.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1020,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "beea657aae70c0c0",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "b67cc96d6bb936d0",
+        "name": "Maintenance",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m3_Maintenance.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1030,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e428bb5d5f0ec36",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "d202b83beb08d032",
+        "name": "Toggle",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m4_toggel2.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1010,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7e26afc9cc5a2fd",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "460397cfae1c4aab",
+        "name": "Ultrasonic",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m5_Ultrasonic.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95d311f16fc6126e",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "882026c4f133ac6c",
+        "name": "Motor",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_Manual_page_m6_Motor.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1010,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "791741b235733462",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Wires",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Wires\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 380,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "3564a2f337803a45",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 1860,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a337c695fa9b5e23",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "73489518f6a38f2a",
+        "name": "Game intro",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "Games",
+        "file": "Bomb_ManualINTRO.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1030,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a43b74f5235f6f48",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Sequence",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Sequence\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 420,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "fea06c6c60c27bcc",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Maintenance",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Maintenance\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 460,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "3ad791310d761fbb",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Toggle",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Toggle\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 500,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "aea4283794e5a73d",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Ultrasonic",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Ultrasonic\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 540,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "f33501d338ea2d82",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Motor",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Motor\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 580,
+        "wires": [
+            [
+                "3564a2f337803a45"
+            ]
+        ]
+    },
+    {
+        "id": "e279e4eabb091111",
+        "type": "delay",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "8bbc5c2c487d3d0b"
+            ]
+        ]
+    },
+    {
+        "id": "11b283a199f6b3cb",
+        "type": "switch",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 1310,
+        "y": 800,
+        "wires": [
+            [
+                "c9225862db5ef224"
+            ],
+            [
+                "befdceb86ee5d2df",
+                "3286e84870176c22"
+            ],
+            [
+                "d0e3ef258b68e744",
+                "3286e84870176c22"
+            ],
+            [
+                "26cf78e30342dd38",
+                "3286e84870176c22"
+            ],
+            [
+                "fa999a6333806820",
+                "3286e84870176c22"
+            ],
+            [
+                "214402b41fbb2629",
+                "3286e84870176c22"
+            ],
+            [
+                "c818cc6be45c5755",
+                "3286e84870176c22"
+            ]
+        ]
+    },
+    {
+        "id": "befdceb86ee5d2df",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Wires",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Wires\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 740,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "214402b41fbb2629",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Sequence",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Sequence\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 900,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "26cf78e30342dd38",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Maintenance",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Maintenance\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 820,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "fa999a6333806820",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Toggle",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Toggle\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 860,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "d0e3ef258b68e744",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Ultrasonic",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Ultrasonic\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 780,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "c818cc6be45c5755",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Motor",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Motor\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 940,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "c9225862db5ef224",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show Intro",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_Intro\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 700,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "3286e84870176c22",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Hide Intro",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_Intro\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 660,
+        "wires": [
+            [
+                "c86ee5c68a88decf"
+            ]
+        ]
+    },
+    {
+        "id": "1538c191e6bd832b",
+        "type": "debug",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c86ee5c68a88decf",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 1860,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8d8ae487373395e",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "b8cf59995ea40bc7",
+        "name": "3lives",
+        "width": 3,
+        "height": 1,
+        "order": 2,
+        "category": "Lives",
+        "file": "3life.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1270,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c35516404d1b992f",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "655bd0b3eb0697df",
+        "name": "2lives",
+        "width": 3,
+        "height": 1,
+        "order": 2,
+        "category": "Lives",
+        "file": "2life.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1270,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66a7e9731e9a6fbe",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "8ed7432d33809982",
+        "name": "1lives",
+        "width": 3,
+        "height": 1,
+        "order": 2,
+        "category": "Lives",
+        "file": "1life.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1270,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "898ece1cad1ca342",
+        "type": "ui_media",
+        "z": "57bab08cc8feb83e",
+        "group": "e56b6bbe0f4f4936",
+        "name": "0lives",
+        "width": 3,
+        "height": 1,
+        "order": 2,
+        "category": "Lives",
+        "file": "0life.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1270,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6282d7576db9f554",
+        "type": "mqtt in",
+        "z": "57bab08cc8feb83e",
+        "name": "From ESP",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e4d2a49aee3b10ab",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "8af9be0113e5256c"
+            ]
+        ]
+    },
+    {
+        "id": "8af9be0113e5256c",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "filter",
+        "func": "if (msg.topic == \"MQTT_OUT\") {\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 60,
+        "wires": [
+            [
+                "3df39dbc1149f302",
+                "a6d8408b06a7d92a"
+            ]
+        ]
+    },
+    {
+        "id": "3df39dbc1149f302",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "set hearts",
+        "func": "if (msg.payload.substring(0,7)==\"hearts=\"){\n    global.set(\"hearts\", msg.payload.substring(7,8));\n\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4dad82b60c9d9dbf",
+        "type": "inject",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 760,
+        "wires": [
+            [
+                "33a0a575f89b4fb1"
+            ]
+        ]
+    },
+    {
+        "id": "33a0a575f89b4fb1",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "func": "if (!global.get(\"hearts\")) {\n    global.set(\"hearts\", \"0\");\n}\n\nmsg.payload=global.get(\"hearts\");\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "17e082c323884c21",
+                "dc6bc68ad5ade02e"
+            ]
+        ]
+    },
+    {
+        "id": "f28699f7a09efe2a",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show  0",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_0lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 780,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "5ffe4fe215875897",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show  1",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_1lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 820,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "d791613cd730e6fa",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show  2",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_2lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 860,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "61ea27ea6cd13aca",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "Show  3",
+        "func": "msg.payload = {group:{\"show\": [\"Gameplay_3lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 900,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "d19d44e42cb2c67f",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "hide0",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_0lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 600,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "9828beebbca67cda",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "hide1",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_1lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 640,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "b055f25155af9285",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "hide2",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_2lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 680,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "9d32c1f8a690a13b",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "hide3",
+        "func": "msg.payload = {group:{\"hide\": [\"Gameplay_3lives\"]}}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 720,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "17e082c323884c21",
+        "type": "switch",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "f28699f7a09efe2a",
+                "9d32c1f8a690a13b",
+                "b055f25155af9285",
+                "9828beebbca67cda"
+            ],
+            [
+                "5ffe4fe215875897",
+                "9d32c1f8a690a13b",
+                "b055f25155af9285",
+                "d19d44e42cb2c67f"
+            ],
+            [
+                "d791613cd730e6fa",
+                "9d32c1f8a690a13b",
+                "9828beebbca67cda",
+                "d19d44e42cb2c67f"
+            ],
+            [
+                "61ea27ea6cd13aca",
+                "b055f25155af9285",
+                "9828beebbca67cda",
+                "d19d44e42cb2c67f"
+            ]
+        ]
+    },
+    {
+        "id": "fd6ee3dabea40d63",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 820,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5e47f465b11a2e6",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "func": "msg.payload = \"Frontpage\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 980,
+        "wires": [
+            [
+                "fd6ee3dabea40d63"
+            ]
+        ]
+    },
+    {
+        "id": "a14c62d6b01accd3",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "func": "global.set(\"hearts\",\"3\")",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "372b4684967a969f",
+        "type": "inject",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 600,
+        "wires": [
+            [
+                "a14c62d6b01accd3"
+            ]
+        ]
+    },
+    {
+        "id": "8a73f63d98b5cb6b",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 980,
+        "y": 780,
+        "wires": [
+            [
+                "bc9e7dc74dbd8797"
+            ]
+        ]
+    },
+    {
+        "id": "dc6bc68ad5ade02e",
+        "type": "debug",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a6d8408b06a7d92a",
+        "type": "function",
+        "z": "57bab08cc8feb83e",
+        "name": "return to homepage ",
+        "func": "if (msg.payload==\"gameover\"){\n    msg.payload = \"Frontpage\";\n    return msg\n\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 20,
+        "wires": [
+            [
+                "5f733725b3d58ec3"
+            ]
+        ]
+    },
+    {
+        "id": "5f733725b3d58ec3",
+        "type": "ui_ui_control",
+        "z": "57bab08cc8feb83e",
+        "name": "",
+        "events": "all",
+        "x": 900,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    }
+]
